@@ -1,0 +1,20 @@
+{
+  "files": {
+    "main.css": "/atms/static/css/main.087b78b1.chunk.css",
+    "main.js": "/atms/static/js/main.5b73391b.chunk.js",
+    "main.js.map": "/atms/static/js/main.5b73391b.chunk.js.map",
+    "runtime-main.js": "/atms/static/js/runtime-main.b48f605c.js",
+    "runtime-main.js.map": "/atms/static/js/runtime-main.b48f605c.js.map",
+    "static/js/2.b94d8ac9.chunk.js": "/atms/static/js/2.b94d8ac9.chunk.js",
+    "static/js/2.b94d8ac9.chunk.js.map": "/atms/static/js/2.b94d8ac9.chunk.js.map",
+    "index.html": "/atms/index.html",
+    "static/css/main.087b78b1.chunk.css.map": "/atms/static/css/main.087b78b1.chunk.css.map",
+    "static/js/2.b94d8ac9.chunk.js.LICENSE.txt": "/atms/static/js/2.b94d8ac9.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.b48f605c.js",
+    "static/js/2.b94d8ac9.chunk.js",
+    "static/css/main.087b78b1.chunk.css",
+    "static/js/main.5b73391b.chunk.js"
+  ]
+}
