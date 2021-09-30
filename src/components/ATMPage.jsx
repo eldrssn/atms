@@ -1,8 +1,9 @@
 import React, { useState, useRef } from 'react';
 import { showAmountOfMoney } from '../utils';
 import Output from './Output';
-import { isRightPattern, withdraw, toNum } from '../utils';
+import { isRightPattern, toNum } from '../utils';
 import Numpad from './Numpad';
+import { withdraw } from '../withdrawCash';
 
 const ATMPage = ({atm}) => {
   
@@ -56,7 +57,7 @@ const ATMPage = ({atm}) => {
 
   return (
     <div className="main-wrapper">
-      <h2 className="main-header">Банкомат на <a href="/atm/">{atm.title}</a></h2>
+      <h2 className="main-header">Банкомат на <a href="/atms/">{atm.title}</a></h2>
       <div className="input-wrapper">
         <input 
           ref={(input) => {inputRef = input}}
