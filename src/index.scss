@@ -1,0 +1,155 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: Nunito, sans-serif;
+  box-sizing: border-box;
+  transition: all .4s;
+}
+
+.main-wrapper {
+  border: 3px solid #123641ad;
+  border-radius: 20px; 
+  width: 500px;
+  margin: 20px auto;
+  height: 90vh;
+  padding: 20px;
+
+}
+
+.main-header {
+  font-size: 20px;
+  text-align: center;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  
+}
+
+.atms-wrapper {
+  display: flex;
+  width: 90%;
+  margin: 0 auto;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  
+
+  li {
+    font-size: 15px;
+    text-align: center;
+    list-style-type: none;
+    font-weight: 700;
+    background: linear-gradient(to left, #71f6ff88, #2c3be04b);
+    border-radius: 20px;
+    width: 45%;
+    padding: 30px;
+    margin-bottom: 20px;
+    box-shadow: 3px 3px 3px rgba(118, 111, 155, 0.341);
+    cursor: pointer;
+
+    &:hover {
+      box-shadow: 5px 5px 5px rgba(34, 18, 129, 0.349);
+    }
+    span {
+      margin-top: 10px;
+    }
+    
+  }
+  
+}
+.question-sign {
+  border: 2px solid black;
+  display: block;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  text-align: center;
+  margin: auto;
+  position: relative;
+  &:hover {
+    background-color: black;
+    color: white;
+  }
+}
+
+[data-tooltip]::after {
+  content: attr(data-tooltip);
+  opacity: 0;
+  transition: 1s;
+  pointer-events: none;
+  position: absolute; 
+  width: 200px; 
+  left: -100px; top: 30px; 
+  background: #123641ad; 
+  color: #fff; 
+  padding: 0.5em;
+  z-index: 1;
+  box-shadow: 3px 3px 3px rgba(118, 111, 155, 0.341);
+  border-radius: 20px;
+}
+
+[data-tooltip]:hover::after {
+  opacity: 1;
+}
+
+
+.input-wrapper {
+  display: flex;
+
+  input {
+    width: 400px;
+    height: 50px;
+    font-size: 20px;
+    padding: 10px;
+  }
+}
+
+.numpad-wrapper {
+  margin: 20px auto 0;
+  display: flex;
+  width: 300px;
+  flex-wrap: wrap;
+  height: 250px;
+  justify-content: space-around;
+
+  button {
+    width: 30%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-size: 20px;
+    background: linear-gradient(to left, #71f6ff88, #2c3be04b);
+    border: none;
+    border-radius: 20px;
+    
+    &:hover {
+      transition: .2s;
+      box-shadow: 3px 3px 3px rgba(34, 18, 129, 0.349);
+    }
+    &:active {
+      background: black;
+      color: white;
+    }
+  }
+}
+
+.loader {
+  margin-top: 15px;
+  display: flex;
+  justify-content: center;
+}
+
+.output {
+  background-color: #123641ad;
+  color: white;
+  padding: 20px;
+  border-radius: 15px;
+  margin-top: 15px;
+  
+  p {
+    padding: 2px 0;
+  }
+
+  .output-bills {
+    font-size: 12px;
+  }
+}
