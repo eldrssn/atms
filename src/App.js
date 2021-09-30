@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { BrowserRouter, Switch, Route } from "react-router-dom";
+import { Switch, Route, HashRouter } from "react-router-dom";
 import ATMPage from "./components/ATMPage";
 import EnterPage from "./components/EnterPage";
 
@@ -7,7 +7,7 @@ function App() {
   const [atm, setAtm] = useState({}); 
 
   return (
-    <BrowserRouter>
+    <HashRouter>
       <Switch>
         <Route 
           exact 
@@ -19,7 +19,7 @@ function App() {
           render={(props) => <ATMPage atm={atm} {...props} />}
         />
       </Switch>
-    </BrowserRouter>
+    </HashRouter>
   );
 }
 
